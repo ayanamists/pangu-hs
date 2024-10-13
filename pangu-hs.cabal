@@ -1,0 +1,71 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.37.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           pangu-hs
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/ayanamists/pangu-hs#readme>
+homepage:       https://github.com/ayanamists/pangu-hs#readme
+bug-reports:    https://github.com/ayanamists/pangu-hs/issues
+author:         ayanamists
+maintainer:     ayanamists@gmail.com
+copyright:      2024 ayanamists
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/ayanamists/pangu-hs
+
+library
+  exposed-modules:
+      Data.Text.Pangu
+      Lib
+  other-modules:
+      Paths_pangu_hs
+  autogen-modules:
+      Paths_pangu_hs
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+    , text >=2.0.2
+  default-language: Haskell2010
+
+executable pangu-hs-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_pangu_hs
+  autogen-modules:
+      Paths_pangu_hs
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , pangu-hs
+    , text >=2.0.2
+  default-language: Haskell2010
+
+test-suite pangu-hs-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_pangu_hs
+  autogen-modules:
+      Paths_pangu_hs
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , pangu-hs
+    , text >=2.0.2
+  default-language: Haskell2010
