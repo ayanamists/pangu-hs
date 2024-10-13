@@ -84,7 +84,7 @@ panguLabelRange = concat
   [ mkRanges [ (0x4E00, 0x9FFF)     -- CJK Unified Ideographs blocks
              , (0x3400, 0x4DBF)     -- CJK Unified Ideographs Extension A
              , (0x20000, 0x2A6DF)   -- CJK Unified Ideographs Extension B
-             , (0xFA00, 0xFAFF)     -- CJK Compatibility Ideographs
+             , (0xF900, 0xFAFF)     -- CJK Compatibility Ideographs
              , (0x3000, 0x303F)     -- CJK Symbols and Punctuation
              ] Han
   , mkRanges [ (0x3040, 0x309F) ] Hiragana
