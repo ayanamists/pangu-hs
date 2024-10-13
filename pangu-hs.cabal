@@ -1,4 +1,4 @@
-cabal-version: 2.2
+cabal-version: 1.12
 
 -- This file has been generated from package.yaml by hpack version 0.37.0.
 --
@@ -12,7 +12,7 @@ bug-reports:    https://github.com/ayanamists/pangu-hs/issues
 author:         ayanamists
 maintainer:     ayanamists@gmail.com
 copyright:      2024 ayanamists
-license:        BSD-3-Clause
+license:        GPL-3
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
@@ -26,10 +26,7 @@ source-repository head
 library
   exposed-modules:
       Data.Text.Pangu
-      Lib
   other-modules:
-      Paths_pangu_hs
-  autogen-modules:
       Paths_pangu_hs
   hs-source-dirs:
       src
@@ -42,8 +39,6 @@ library
 executable pangu-hs-exe
   main-is: Main.hs
   other-modules:
-      Paths_pangu_hs
-  autogen-modules:
       Paths_pangu_hs
   hs-source-dirs:
       app
@@ -58,8 +53,6 @@ test-suite pangu-hs-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_pangu_hs
-  autogen-modules:
       Paths_pangu_hs
   hs-source-dirs:
       test
