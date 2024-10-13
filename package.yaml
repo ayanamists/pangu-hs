@@ -1,7 +1,7 @@
 name:                pangu-hs
 version:             0.1.0.0
 github:              "ayanamists/pangu-hs"
-license:             BSD-3-Clause
+license:             GPL-3
 author:              "ayanamists"
 maintainer:          "ayanamists@gmail.com"
 copyright:           "2024 ayanamists"
